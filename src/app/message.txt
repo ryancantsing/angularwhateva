@@ -1,0 +1,22 @@
+Hello! This is a mess.
+
+
+Originally speaking of my skills, this is clearly indictative of what I actually know. That being said, 
+I have a lot to learn. There are no good SAAS practices here. There's a lot of google location business
+but I couldn't figure out the time zones. That was a huge pain. But that isn't your fault. Doing timezone
+stuff is just the nature of the game, and I could not hack it. 
+
+1. If you click on the make this your prefferred state when you're on your preferred state's location it'll
+remove the preferred state if you want to set the preferred state back to none.
+
+2. I apologize for using your resources for this. I spent a lot of hours on it (you wouldn't guess it) and
+I need to allocate my time elsewhere, continuing my job search. 
+
+3. I am not withdrawing myself from any consideration, but this is where I'm at.
+
+4. Thank you for your time, I appreciate the perspective that this exercise has given me. But hey, I used
+Angular 7 for the first time! It's the same as 6 pretty much!
+
+
+
+Ryan Riddell
