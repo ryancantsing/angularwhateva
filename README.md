@@ -1,3 +1,5 @@
+Hey guys! All you have to do is npm install and ng build and ng serve. 
+
 # AngularWhatever
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.7.
