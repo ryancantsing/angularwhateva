@@ -1,0 +1,100 @@
+/* .body{
+  width: 50%;
+}
+#wrapper {
+    background-color: #F9F6ED;
+    height: 800px;
+    width: 70%;
+    display: inline-block;
+}
+
+#leftColumn{
+    width: 300px;
+    height: 550px;
+    background-color: #5B9BD5;
+    color: white;
+    display: inline-block;
+}
+#rightColumn{
+    width: 350px;
+    height: 400px;
+    background: linear-gradient(#526C88, #657180);
+    color: white;
+    padding-top: 3%;
+    font-size: 20px;
+    display:inline-block;
+  }
+#dropDown{
+    height: 100px;
+    width: 100%;
+    display: inline-block;
+    background-color: yellow;
+}
+.infoDiv{
+    height: 175px;
+    display: inline-block;
+    width: 100%;
+}
+.infoDiv:hover{
+    background-color: white;
+    color: #5B9BD5;
+    transition-duration: 750ms;
+}
+#locationPlace{
+    overflow-x: hidden;
+    overflow-y: scroll;
+    display: inline-block;
+    height: 500px;
+    width: 100%;
+}
+.dropbtn {
+  background-color: #5B9BD5;
+  color: white;
+  font-size: 16px;
+  width: 300px;
+  height: 50px;
+}
+.dropper{
+  display: inline-block;
+  width: 100%;
+  padding-left: 100px;
+  color: #5B9BD5;
+} */
+/* The container <div> - needed to position the dropdown content */
+/* .dropdown {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+}
+::-webkit-scrollbar {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: white;
+} */
+/* Dropdown Content (Hidden by Default) */
+/* .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+} */
+
+/* Links inside the dropdown */
+/* .dropdown-content p {
+  text-decoration: none;
+  display: inline-block;
+  height: 100%;
+  font-size: 20px;
+} */
+
+/* Change color of dropdown links on hover */
+/* .dropdown-content .dropper:hover {background-color: #5B9BD5; width: 100%; color:white; transition-duration: 500ms;} */
+
+/* Show the dropdown menu on hover */
+/* .dropdown:hover .dropdown-content {display: block; overflow-x: hidden; overflow-y: scroll; height: 250px;} */
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+/* .dropdown:hover .dropbtn {background-color: white; color: #5B9BD5;} */

@@ -1,0 +1,31 @@
+      <!-- <div id="leftColumn">
+        <div class="dropdown">
+          <div class="dropbtn">{{defaultState}} (Hover for Dropdown)</div>
+          <div class="dropdown-content flex-container">
+            <div class="dropper" *ngFor="let state of states">
+              <p (click)="initialLocations(state.abbreviation)">{{state.name}}</p>
+            </div>
+          </div>
+        </div>
+        <div id="locationPlace">
+          <h4>Locations in {{defaultState}}</h4><button (click)="favState(defaultState)">Make this your preferred state</button>
+          <div *ngFor="let location of locations" class="infoDiv">
+              <div class="infoRow" (click)="newAddress(location.address)">
+                <p>-----------------------</p>
+                <p>{{location.address}} </p>
+                <p> {{location.city}}, {{location.state}}  {{location.zip}}</p>
+                <p> {{location.fax}}</p>
+              </div>
+          </div>
+        </div>
+      </div>
+      <div id="rightColumn">
+        <h3>Hours</h3>
+        <p>Monday: {{hours.monOpenTime}} - {{hours.monCloseTime}}</p>
+        <p>Tuesday: {{hours.tueOpenTime}} - {{hours.tueCloseTime}}</p>
+        <p>Wedneday: {{hours.wedOpenTime}} - {{hours.wedCloseTime}}</p>
+        <p>Thursday: {{hours.thuOpenTime}} - {{hours.thuCloseTime}}</p>
+        <p>Friday: {{hours.friOpenTime}} - {{hours.friCloseTime}}</p>
+        <p>Saturday: {{hours.satOpenTime}} - {{hours.satCloseTime}}</p>
+        <p>Sunday: {{hours.sunOpenTime}} - {{hours.sunCloseTime}}</p>
+      </div>

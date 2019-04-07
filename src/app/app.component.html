@@ -9,40 +9,80 @@
 <body>
   <div id="wrapper">
     <div class="row">
-      <div class="column" id="leftColumn">
+      <div class="left-column">
         <div class="dropdown">
-          <div class="dropbtn">{{defaultState}} (Hover for Dropdown)</div>
-          <div class="dropdown-content">
-            <div class="dropper" *ngFor="let state of states">
-              <p (click)="initialLocations(state.abbreviation)">{{state.name}}</p>
+          <div class="scroll-bar dropbtn"><h4>{{defaultState}} (Hover to Choose Another State)</h4></div>
+            <div class="dropdown-content">
+              <div class="dropper" *ngFor="let state of states" (click)="initialLocations(state.abbreviation)">
+                <p>{{state.name}}</p>
+              </div>
+            </div>
+        </div>
+        <div class="location-header">
+          <h4>Locations in {{ defaultState }}</h4>
+          <button class="favButton" (click)="favState(defaultState)">Make this your preferred state</button>
+        </div>
+        <div class="location-container">
+          <div *ngFor="let location of locations" class="location-info-div">
+            <div class=info-row (click)="newAddress(location.address)">
+              <p>---------------------------------------</p>
+              <p>{{location.address}}</p>
+              <p>{{location.city}}, {{location.state}} {{location.zip}}</p>
+              <p>{{location.fax}}</p>
+              <p>---------------------------------------</p>
             </div>
           </div>
         </div>
-        <div id="locationPlace">
-          <h4>Locations in {{defaultState}}</h4><button (click)="favState(defaultState)">Make this your preferred state</button>
-          <div *ngFor="let location of locations" class="infoDiv">
-              <div class="infoRow" (click)="newAddress(location.address)">
-                <p>-----------------------</p>
-                <p>{{location.address}} </p>
-                <p> {{location.city}}, {{location.state}}  {{location.zip}}</p>
-                <p> {{location.fax}}</p>
-              </div>
-          </div>
+      </div>
+      <div class="right-column">
+        <div class="hours-sign">
+          <h1>Branch Hours</h1>
         </div>
+        <div class="hours-display">
+            <div class="minirow row flex-container">
+              <div class="day-block">Monday</div>
+              <div class="open-block">{{hours.monOpenTime}}</div>
+              <div class="hyphen-block"> - </div>
+              <div class="close-block"> {{hours.monCloseTime}}</div>
+            </div>
+            <div class="minirow row flex-container">
+                <div class="day-block">Tuesday</div>
+                <div class="open-block">{{hours.tueOpenTime}}</div>
+                <div class="hyphen-block"> - </div>
+                <div class="close-block"> {{hours.tueCloseTime}}</div>
+              </div>
+            <div class="minirow row flex-container">
+                <div class="day-block">Wednesday</div>
+                <div class="open-block">{{hours.wedOpenTime}}</div>
+                <div class="hyphen-block"> - </div>
+                <div class="close-block"> {{hours.wedCloseTime}}</div>
+            </div>
+            <div class="minirow row flex-container">
+                <div class="day-block">Thursday</div>
+                <div class="open-block">{{hours.thuOpenTime}}</div>
+                <div class="hyphen-block"> - </div>
+                <div class="close-block"> {{hours.thuCloseTime}}</div>
+              </div>
+            <div class="minirow row flex-container">
+                <div class="day-block">Friday</div>
+                <div class="open-block">{{hours.friOpenTime}}</div>
+                <div class="hyphen-block"> - </div>
+                <div class="close-block"> {{hours.friCloseTime}}</div>
+            </div>
+            <div class="minirow row flex-container">
+                <div class="day-block">Saturday</div>
+                <div class="open-block-closed" >{{hours.satOpenTime}}</div>
+                <div class="close-block-closed"></div>
+            </div>
+            <div class="minirow row flex-container">
+                <div class="day-block">Sunday</div>
+                <div class="open-block-closed">{{hours.sunOpenTime}}</div>
+                <div class="close-block-closed"></div>
+            </div>
+        </div>        
       </div>
-      <div class="column" id="rightColumn">
-        <h3>Hours</h3>
-        <p>Monday: {{hours.monOpenTime}} - {{hours.monCloseTime}}</p>
-        <p>Tuesday: {{hours.tueOpenTime}} - {{hours.tueCloseTime}}</p>
-        <p>Wedneday: {{hours.wedOpenTime}} - {{hours.wedCloseTime}}</p>
-        <p>Thursday: {{hours.thuOpenTime}} - {{hours.thuCloseTime}}</p>
-        <p>Friday: {{hours.friOpenTime}} - {{hours.friCloseTime}}</p>
-        <p>Saturday: {{hours.satOpenTime}} - {{hours.satCloseTime}}</p>
-        <p>Sunday: {{hours.sunOpenTime}} - {{hours.sunCloseTime}}</p>
-      </div>
-    </div>
-  </div>  
-  
+    </div>  
+  </div>
 </body>
 </html>
 
