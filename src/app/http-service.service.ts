@@ -9,12 +9,10 @@ export class HttpServiceService {
 
   }
   getLocation(lat, lon, key){
-    console.log("Hey, you made it the service point");
     return this._http.get(`https://maps.googleapis.com/maps/api/geocode/json?latlng=${lat},${lon}&key=${key}`)
   }
 
   getLocations(state){
-    console.log("With the state, we find the rest");
     let url = `http://files.baldwinf.com/branches/`
     let body = new HttpParams()
       .set('WEBSITE', "MI")

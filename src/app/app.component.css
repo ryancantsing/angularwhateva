@@ -16,12 +16,12 @@
   margin-left: 75px;
 }
 .right-column{
-  height: 550px;
+  height: 625px;
   width: 450px;
   display: inline-block;
   background-image: linear-gradient(#506A86, #334356);
   vertical-align: top;
-  margin-top: 75px;
+  margin-top: 45px;
   margin-left: 75px;
   border: 10px solid white;
   box-sizing: border-box;
@@ -210,6 +210,17 @@
   margin-left: 20px;
 }
 
+.open-message {
+  width: 360px;
+  height: 95px;
+  display: inline-block;
+  text-align: center;
+  border: 5px solid white; 
+  box-sizing: border-box;
+  border-radius: 15px;
+  color: white;
+  background-image: linear-gradient(#9AC96A, #5F8833)
+}
 /* colors: #55718D 
 #C1262C
 green gradient #9AC96A #5F8833
